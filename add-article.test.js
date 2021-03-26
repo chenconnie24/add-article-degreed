@@ -4,16 +4,6 @@ let browser;
 
 describe('Add content to your profile', () => {
   describe('Article', () => {
-    // beforeEach(async () => {
-    //   browser = await puppeteer.launch({headless : false});
-    //   page = await browser.newPage();
-    // })
-
-    // afterAll(async () => {
-    //   await page.close();
-    //   await browser.close();
-    // })
-  
     it('adds an article with a title to user profile', async () => {
       // create new browser instance and open new page
       browser = await puppeteer.launch({headless : false});
