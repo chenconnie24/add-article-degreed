@@ -8,8 +8,7 @@ What has been completed:
     shown in the dropdown menu, adds one article, refreshes the page, checks again the number of
     articles saved to their profile
 
-2. Verification of one article being added using the "+" button by confirming the number of articles 
-saved to a user's profile increments by one after an article is added
+2. Confirmation that the number of articles saved to a user's profile increments by one after an article is added
 
 
 What needs further work:
