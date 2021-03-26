@@ -1,0 +1,33 @@
+Assumptions made:
+1. The integer shown next to the dropdown menu item for articles represents the number of articles
+saved to a user's profile
+
+What has been completed:
+1. Test flow
+    a. User signs in, checks the number of articles saved to their profile by looking at the number
+    shown in the dropdown menu, adds one article, refreshes the page, checks again the number of
+    articles saved to their profile
+
+2. Verification of one article being added using the "+" button by confirming the number of articles 
+saved to a user's profile increments by one after an article is added
+
+
+What needs further work:
+1. Refactoring of code
+    a. Make signing in, finding the number of articles saved to user profile separate functions
+
+    b. Consider making clicking on actionable items separate functions because most of those
+    actions consisted of waiting for the selector or xpath to be recognized, waiting for the button
+    to be visible, and clicking on the button with a one second delay (the delay is the amount of time
+    to hold down a click on a clickable item)
+
+    c. Placing functions in a separate folder
+
+    d. Initialize puppeteer and browser instance as global variables
+
+2. Fix the asynchronous call so that the test resolves correctly. Currently, the asynchronous calls
+are not resolving as I expected. The test appears to fail, I believe, because of this. However, the
+behavior of adding an article is working as expected.
+
+3. Additional tests to verify that articles are able to be added as expected. The written test verifies
+that one article can be added.
